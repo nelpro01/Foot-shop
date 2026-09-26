@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FootShop - Maillots de football</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .produits {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .maillot {
+            background: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .maillot img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .prix {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 15px;
+        }
+
+        button {
+            background: #008000;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #005f00;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>⚽ FOOTSHOP</h1>
+        <p>Maillots de football</p>
+    </header>
+
+    <section class="intro">
+        <h2>Nos maillots</h2>
+        <p>Découvre notre collection de maillots.</p>
+    </section>
+
+    <section class="produits">
+
+        <div class="maillot">
+            <img src="https://via.placeholder.com/250x250?text=Maillot+1" alt="Maillot de football">
+            <h3>Maillot Rouge</h3>
+            <p>Maillot de football 2026</p>
+            <p class="prix">25 $</p>
+            <button onclick="acheter('Maillot Rouge')">
+                Acheter
+            </button>
+        </div>
+
+        <div class="maillot">
+            <img src="https://via.placeholder.com/250x250?text=Maillot+2" alt="Maillot de football">
+            <h3>Maillot Bleu</h3>
+            <p>Maillot de football 2026</p>
+            <p class="prix">30 $</p>
+            <button onclick="acheter('Maillot Bleu')">
+                Acheter
+            </button>
+        </div>
+
+        <div class="maillot">
+            <img src="https://via.placeholder.com/250x250?text=Maillot+3" alt="Maillot de football">
+            <h3>Maillot Noir</h3>
+            <p>Maillot de football 2026</p>
+            <p class="prix">28 $</p>
+            <button onclick="acheter('Maillot Noir')">
+                Acheter
+            </button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 FootShop - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        function acheter(maillot) {
+            alert("Tu as choisi : " + maillot);
+        }
+    </script>
+
+</body>
+</html>
